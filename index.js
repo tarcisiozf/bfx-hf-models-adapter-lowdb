@@ -14,7 +14,7 @@ const collectionMethods = require('./lib/collection_methods')
 module.exports = ({
   dbPath,
   defaultData,
-  backend = FileSync,
+  Backend = FileSync
 }) => {
   if (!_isString(dbPath) || _isEmpty(dbPath)) {
     throw new Error('DB path required')
@@ -22,7 +22,7 @@ module.exports = ({
 
   debug('loading from %s', dbPath)
 
-  const db = lowdb(new backend(dbPath))
+  const db = lowdb(new Backend(dbPath))
 
   if (_isObject(defaultData) && !_isEmpty(defaultData)) {
     db.defaults(defaultData).write()

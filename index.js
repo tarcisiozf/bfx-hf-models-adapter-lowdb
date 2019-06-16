@@ -8,6 +8,7 @@ const _isEmpty = require('lodash/isEmpty')
 const lowdb = require('lowdb')
 
 const mapMethods = require('./lib/map_methods')
+const genericMethods = require('./lib/generic_methods')
 const collectionMethods = require('./lib/collection_methods')
 
 module.exports = ({
@@ -27,9 +28,14 @@ module.exports = ({
     db.defaults(defaultData).write()
   }
 
+  const close = db.write.bind(db) // can't close lowdb, just flush changes
+
   return {
     db,
+    close,
     mapMethods,
     collectionMethods,
+    genericMethods,
+    name: 'LowDB'
   }
 }

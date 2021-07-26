@@ -15,10 +15,10 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/f3rno/bfx-hf-models-adapter-lowdb.git"
+    "url": "https://github.com/bitfinexcom/bfx-hf-models-adapter-lowdb.git"
   },
   "bugs": {
-    "url": "https://github.com/f3rno/bfx-hf-models-adapter-lowdb/issues"
+    "url": "https://github.com/bitfinexcom/bfx-hf-models-adapter-lowdb/issues"
   },
   "scripts": {
     "lint": "standard",

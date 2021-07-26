@@ -39,9 +39,9 @@
     "lowdb": "^1.0.0"
   },
   "devDependencies": {
-    "bfx-hf-ext-plugin-dummy": "github:bitfinexcom/bfx-hf-ext-plugin-dummy#v1.0.2",
+    "bfx-hf-ext-plugin-dummy": "github:bitfinexcom/bfx-hf-ext-plugin-dummy#v1.0.4",
     "babel-eslint": "^8.2.6",
-    "bfx-hf-models": "github:bitfinexcom/bfx-hf-models#v2.3.2",
+    "bfx-hf-models": "github:bitfinexcom/bfx-hf-models#v2.3.3",
     "chai": "^4.2.0",
     "dotenv": "^6.0.0",
     "eslint": "^4.19.1",
